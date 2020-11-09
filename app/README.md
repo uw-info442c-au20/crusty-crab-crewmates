@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Start Up
+After running `git pull`, you should run `npm install` to download the neccesary packages. Also make sure to install firebase by running `curl -sL https://firebase.tools | bash`.
+
 ## Available Scripts
 
 In the project directory, you can run:
