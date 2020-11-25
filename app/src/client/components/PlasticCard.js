@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 export default class PlasticCard extends Component {
     render() {
         return (
-            <Card style={{ 
+            <Card style={{
                 // box dimenstions
                 width: '66px',
                 height: "66px",
@@ -14,17 +14,16 @@ export default class PlasticCard extends Component {
                 borderColor: "#3C9471",
                 borderWidth: "3px",
                 // background image styles
-                backgroundImage: `url(${require("../imgs/recycle.png")})`,
+                backgroundImage: url(${require("../imgs/recycle.png")}),
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
             }}>
                 <Card.Body style={{
-                    // text
-                    verticalAlign: "middle"
+                    verticalAlign: "middle",
+                    padding: "0 0 0 0" // get rid of default padding on card body
                 }}>
-                    <Card.Title style={{ 
-                        float: "40%",
-                        fontSize: "43px", 
+                    <Card.Title className="text-center" style={{
+                        fontSize: "43px",
                     }}>{this.props.number}</Card.Title>
                 </Card.Body>
             </Card>
