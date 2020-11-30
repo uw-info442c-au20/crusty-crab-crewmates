@@ -24,6 +24,7 @@ export default class PlasticCard extends Component {
                 }}>
                     <Card.Title className="text-center" style={{
                         fontSize: "43px",
+                        color: "#16605A"
                     }}>{this.props.number}</Card.Title>
                 </Card.Body>
             </Card>
