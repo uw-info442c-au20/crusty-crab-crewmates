@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PlasticCard from '../components/PlasticCard';
+import "./Home.css";
 
 export default class Home extends Component {
     constructor(props) {
@@ -11,8 +12,9 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div style={{
-                backgroundColor: "green"
+            <div className="bg" style={{
+                backgroundColor: "green",
+                height: "100%"
             }}>
                 <h1 className="text-center">Sort</h1>
                 <div style={{

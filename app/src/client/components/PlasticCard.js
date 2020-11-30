@@ -14,7 +14,7 @@ export default class PlasticCard extends Component {
                 borderColor: "#3C9471",
                 borderWidth: "3px",
                 // background image styles
-                backgroundImage: url(${require("../imgs/recycle.png")}),
+                backgroundImage: `url(${require("../imgs/recycle.png")})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
             }}>
