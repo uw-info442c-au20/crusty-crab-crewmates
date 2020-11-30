@@ -1,21 +1,24 @@
 import React from 'react';
 import './App.css';
 import Home from './client/pages/Home';
+import Details from './client/pages/Details';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
-
 
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <Home />
+          </Route>
+          <Route path='/details/:id'>
+            <Details />
           </Route>
         </Switch>
       </Router>
-      {/* firebase setup */}  
+      {/* firebase setup */}
       <script src="/__/firebase/7.24.0/firebase-app.js"></script>
       <script src="/__/firebase/7.24.0/firebase-analytics.js"></script>
       <script src="/__/firebase/init.js"></script>
