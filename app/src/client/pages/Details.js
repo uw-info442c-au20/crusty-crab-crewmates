@@ -1,4 +1,5 @@
 import { useParams } from 'react-router';
+import React from 'react';
 
 export default function Details() {
     const { id } = useParams();
@@ -26,5 +27,5 @@ export default function Details() {
                 }}>{number[id]}</h1>
             </div>
         </div>
-    )
+    );
 }
