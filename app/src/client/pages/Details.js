@@ -73,7 +73,7 @@ export default function Details() {
                         marginRight: "20px"
                     }}>{data.HowToRecycle}</p>
                     <div className="text-center">
-                        <iframe width="300" height="315" src="https://www.youtube.com/embed/jJlqyTb-oy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="recycling video" width="300" height="315" src="https://www.youtube.com/embed/jJlqyTb-oy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>) : ""}
             </div>
