@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+import { useParams } from 'react-router';
+>>>>>>> Stashed changes
 import React, { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 
