@@ -16,20 +16,12 @@ export default class Home extends Component {
             <div className="bg">
                 {/* Mobile version */}
                 <div id="mobile" className="bg" style={{
-<<<<<<< Updated upstream
-                    backgroundImage: url(${require("../imgs/recycle-bg1.PNG")}),
-=======
                     backgroundImage: `url(${require("../imgs/recycle-bg1.PNG")})`,
->>>>>>> Stashed changes
                     backgroundPosition: "50% 5%",
                     backgroundRepeat: "repeat"
                 }}>
                     <div className="bg" style={{
-<<<<<<< Updated upstream
-                        backgroundImage: url(${require("../imgs/recycle-bg2.PNG")}),
-=======
                         backgroundImage: `url(${require("../imgs/recycle-bg2.PNG")})`,
->>>>>>> Stashed changes
                         backgroundPosition: "50% 95%",
                         backgroundRepeat: "repeat",
                     }}>
