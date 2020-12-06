@@ -15,16 +15,8 @@ export default class Home extends Component {
         return (
             <div className="bg">
                 {/* Mobile version */}
-                <div id="mobile" className="bg" style={{
-                    backgroundImage: `url(${require("../imgs/recycle-bg1.PNG")})`,
-                    backgroundPosition: "50% 5%",
-                    backgroundRepeat: "repeat"
-                }}>
-                    <div className="bg" style={{
-                        backgroundImage: `url(${require("../imgs/recycle-bg2.PNG")})`,
-                        backgroundPosition: "50% 95%",
-                        backgroundRepeat: "repeat",
-                    }}>
+                <div id="mobile" className="bg">
+                    <div id="bg-bottom" className="bg">
                         <h1 className="text-center">Sort</h1>
                         <div style={{
                             position: "relative",

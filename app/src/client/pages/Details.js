@@ -1,5 +1,6 @@
 import { useParams } from 'react-router';
 import React, { useEffect, useState } from 'react';
+import "./Details.css";
 import * as d3 from 'd3';
 
 export default function Details() {
@@ -29,17 +30,8 @@ export default function Details() {
     }
 
     return (
-        <div className="bg" style={{
-            backgroundImage: `url(${require("../imgs/recycle-homepage1.png")})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "65% -250%",
-            backgroundSize: "700px"
-        }}>
-            <div className="bg" style={{
-                backgroundImage: `url(${require("../imgs/pvc-tube.png")})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "15% 10%"
-            }}>
+        <div id="bg-top" className="bg">
+            <div id="recycle-img" className="bg">
                 <h1 className="ml-3" style={{
                     color: "#F7F7F7",
                     fontSize: "70px"

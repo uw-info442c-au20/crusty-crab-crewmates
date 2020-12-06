@@ -1,0 +1,35 @@
+#bg-top {
+    background-image: url("../imgs/recycle-homepage1.png");
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+
+#recycle-img {
+    background-image: url("../imgs/pvc-tube.png");
+    background-repeat: no-repeat;
+    background-position: 15% 10%;
+}
+
+@media only screen and (max-width: 520px) {
+    #bg-top {
+        background-position: -40vw -40vh;
+    }
+}
+
+@media only screen and (min-width: 521px) {
+    #bg-top {
+        background-position: -25vw -40vh;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    #bg-top {
+        background-size: 600px;
+        background-position: -40vw -40vh;
+    }
+
+    #recycle-img {
+        background-size: 150px;
+        background-position: 20vw 15vh;
+    }
+}

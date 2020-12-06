@@ -2,6 +2,16 @@ html, body, #root, .App, .bg, .card-deck {
     height: 100%
 }
 
+#mobile {
+    background-image: url("../imgs/recycle-bg1.PNG");
+    background-repeat: no-repeat;
+}
+
+#bg-bottom {
+    background-image: url("../imgs/recycle-bg2.PNG");
+    background-repeat: no-repeat;
+}
+
 @media only screen and (min-width: 600px) {
     #mobile {
         display: none;
@@ -11,6 +21,26 @@ html, body, #root, .App, .bg, .card-deck {
 @media only screen and (max-width: 600px) {
     #web {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #mobile {
+        background-position: -100vw -60vh;
+    }
+
+    #bg-bottom {
+        background-position: -80vw 5vh;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    #mobile {
+        background-position: -50vw -60vh;
+    }
+
+    #bg-bottom {
+        background-position: -40vw 5vh;
     }
 }
 
