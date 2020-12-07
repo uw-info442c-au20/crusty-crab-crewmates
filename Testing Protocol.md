@@ -17,3 +17,4 @@ Sample Tasks list:
 1. Scrolling through the interface
 2. Click and watch the embedded Youtube Video
 3. Check a recycling product's details
+4. Try to Learn more about a specific type of plastic
