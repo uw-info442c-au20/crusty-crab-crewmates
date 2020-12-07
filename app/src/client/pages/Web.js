@@ -22,9 +22,9 @@ export default class Web extends Component {
     }
 
     changeRecycleNumber = (recycleNumber) => {
-        this.setState({ 
+        this.setState({
             recycleNumber,
-            showModal: true 
+            showModal: true
         });
     }
 
@@ -74,12 +74,12 @@ export default class Web extends Component {
                         }}>
                             <h1 style={{ color: "#1F7269"}}>Welcome to Sort!</h1>
                             <h1 style={{ color: "#86AFAB"}}>Recyling Made</h1>
-                            <h1 style={{ color: "#86AFAB" }}>sorta Easy</h1>
+                            <h1 style={{ color: "#86AFAB" }}>(Sorta) Easy</h1>
                             <p style={{
                                 width: "40vw",
                             }}>We know you want to help recycle, but doing it well is hard!
                             Easily learn how to make the right sortment and confindently
-                            freethrow your plastics into the correct bin</p>
+                            freethrow your plastics into the correct bin.</p>
                         </div>
                         <img style={{
                             maxWidth: "500px",
@@ -90,7 +90,7 @@ export default class Web extends Component {
                     <div id="our-goal" className="d-flex flex-row" style={{
                         marginLeft: "15vw"
                     }}>
-                        <img alt="person speaking green background" src={require("../imgs/our-goal.svg")} />   
+                        <img alt="person speaking green background" src={require("../imgs/our-goal.svg")} />
                         <div id="our-goal-text" className="text-center" style={{
                             maxWidth: "600px",
                             width: "auto",
@@ -99,9 +99,12 @@ export default class Web extends Component {
                             marginTop: "8vh"
                         }}>
                             <h1 style={{ color: "#1F7269" }}>Our Goal</h1>
-                            <p>Our goal is to help reduce recycling error among younger individuals 
-                                in the us, cause no one really knows
-                                 how to recyce ya feel thgere should be more</p>
+                            <p>Sort was inspired by the <a href = "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html">
+                            UN’s Sustainable Development
+                                Goal No. 13 - Sustainable Cities and Communities</a>. Our goal is to help reduce
+                                recycling error among younger individuals in the United States and help them
+                                understand the process of recycling.
+</p>
                         </div>
                     </div>
                     <div className="d-flex flex-row mt-5" id="how-were-gonna-do-it" style={{
@@ -115,23 +118,22 @@ export default class Web extends Component {
 
                             marginTop: "8vh"
                         }}>
-                            <h1 style={{ color: "#1F7269" }}>How we’re gonna do it</h1>
-                            <p>Our goal is to help reduce recycling error among younger 
-                                individuals in the U.S, cause no one really knows how to
-                                 recyce ya feel thgere should be moreOur goal is to hel
-                                 p reduce recycling error among younger individuals in the us, c
-                                 ause no one really knows how to recyce ya feel thgere should be more</p>
+                            <h1 style={{ color: "#1F7269" }}>How We’re Gonna Do It</h1>
+                            <p>One of the ways we’re building out Sort is by educating the public through understanding
+                              the plastic codes you see on your plastic objects. Those codes help explain what those
+                              plastics are and how might we handle those when we’re going to recycle or throw away
+                              different objects.</p>
                         </div>
                     </div>
-                    <div id="process" className="mb-5" style={{ 
+                    <div id="process" className="mb-5" style={{
                         marginLeft: "15vw",
                         marginTop: "8vh"
                     }}>
-                        <h1 style={{ color: "#1F7269" }}>Wait, Plastics have codes?</h1>
+                        <h1 style={{ color: "#1F7269" }}>Start Sortin'</h1>
                         <p style={{
                             width: "40vw"
                         }}>
-                            Just like people, not all plastics are the same.
+                            Our MVP is focused on understanding plastic
                             Depending on where you live, certain plastics are not recyclable.
                             Check out our handy guide to learn more about the different types of plastics!
                         </p>
@@ -139,7 +141,7 @@ export default class Web extends Component {
                             {cards}
                         </div>
                     </div>
-                    {datum ? (<DetailsModal onClose={() => this.closeModal()} show={this.state.showModal} datum={datum} 
+                    {datum ? (<DetailsModal onClose={() => this.closeModal()} show={this.state.showModal} datum={datum}
                         number={this.state.recycleNumber} />) : ""}
                 </div>
             </div>

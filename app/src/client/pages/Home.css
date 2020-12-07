@@ -62,14 +62,16 @@ html, body, #root, .App, .bg, .card-deck {
         margin-top: 5vh;
     }
 }
-
+#web p {
+  text-align:left;
+}
 #web h1 {
     font-size: 70px;
     font-weight: bold;
 }
 
 #web a {
-    font-size: 3vh;
+    font-weight: bold;
     color: #06413D;
 }
 
@@ -87,7 +89,7 @@ html, body, #root, .App, .bg, .card-deck {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
-  
+
 .modal-main {
     position:fixed;
     background: white;
