@@ -3,7 +3,7 @@
 
 Hello hello! We're the crusty crab crewmates and we aim to reduce recycling error
 
-Visit us at [our Website] (https://crusty-crab-crewmates.web.app/)
+Visit us at [our Website](https://crusty-crab-crewmates.web.app/)
 
 # About Us
 
