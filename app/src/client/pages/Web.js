@@ -72,7 +72,10 @@ export default class Web extends Component {
                             height: "auto"
                         }} alt="fun-recycling" src={`${require("../imgs/recyclePpl.png")}`} />
                     </div>
-                    <div className="explanation" style={{
+                    <div id="our-goal">
+                        <img src={require("../imgs/our-goal.svg")} />   
+                    </div>
+                    <div className="explanation" style={{ 
                         marginLeft: "15vw"
                     }}>
                         <h1 style={{ color: "#1F7269" }}>Wait, Plastics have codes?</h1>
@@ -89,7 +92,6 @@ export default class Web extends Component {
                     </div>
                     <div style={{
                         width: "100vw",
-
                         backgroundImage: `url(${require("../imgs/recycle-homepage2.png")})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "100vw",
