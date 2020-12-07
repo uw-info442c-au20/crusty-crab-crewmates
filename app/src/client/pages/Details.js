@@ -12,7 +12,7 @@ export default function Details() {
 
     // similar to componentDidMount
     useEffect(() => {
-        d3.tsv(require("../data/data.tsv")).then((data) => {
+        d3.tsv(require("../data/data2.tsv")).then((data) => {
             const materialData = data.find(d => d.Grade === id);
             const foundIn = materialData.FoundIn.split(",");
             let foundInWithSpaces = foundIn[0];
@@ -46,6 +46,10 @@ export default function Details() {
                         fontSize: "50px"
                     }}>{`${data.PlasticName} (${data.PlasticAbv})`}</h2>
                     <p style={{
+                        fontWeight: "bold",
+                        fontSize: "25px"
+                    }}>{data.CanYouRecycle}</p>
+                    <p style={{
                         color: "#777877"
                     }}>{`Typically used in ${data.FoundIn}`}</p>
                     <p onClick={() => toggleShowMore(true)} style={{
@@ -67,7 +71,7 @@ export default function Details() {
                         marginRight: "20px"
                     }}>{data.HowToRecycle}</p>
                     <div className="text-center">
-                        <iframe title="recycling video" width="300" height="315" src="https://www.youtube.com/embed/jJlqyTb-oy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="recycling video" width="300" height="315" src={"https://www.youtube.com/embed/jJlqyTb-oy0?start=" + data.YoutubeStart} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>) : ""}
             </div>

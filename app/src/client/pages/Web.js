@@ -15,7 +15,7 @@ export default class Web extends Component {
     }
 
     componentDidMount() {
-        d3.tsv(require('../data/data.tsv'), d3.autoType).then((data) => {
+        d3.tsv(require('../data/data2.tsv'), d3.autoType).then((data) => {
             console.log(data)
             this.setState({ data });
         });
