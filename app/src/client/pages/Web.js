@@ -57,13 +57,13 @@ export default class Web extends Component {
                         <div style={{
                             maxWidth: "650px"
                         }}>
-                            <h1 style={{ color: "#1F7269" }}>Welcome to Sort!</h1>
-                            <h1 style={{ color: "#86AFAB" }}>Recyling Made</h1>
+                            <h1 style={{ color: "#1F7269"}}>Welcome to Sort!</h1>
+                            <h1 style={{ color: "#86AFAB"}}>Recyling Made</h1>
                             <h1 style={{ color: "#86AFAB" }}>sorta Easy</h1>
                             <p style={{
                                 width: "40vw",
-                            }}>We know you want to help recycle, but doing it well is hard! 
-                            Easily learn how to make the right sortment and confindently 
+                            }}>We know you want to help recycle, but doing it well is hard!
+                            Easily learn how to make the right sortment and confindently
                             freethrow your plastics into the correct bin</p>
                         </div>
                         <img style={{
@@ -72,14 +72,14 @@ export default class Web extends Component {
                             height: "auto"
                         }} alt="fun-recycling" src={`${require("../imgs/recyclePpl.png")}`} />
                     </div>
-                    <div className="explanation" style={{ 
+                    <div className="explanation" style={{
                         marginLeft: "15vw"
                     }}>
                         <h1 style={{ color: "#1F7269" }}>Wait, Plastics have codes?</h1>
-                        <p style={{ 
-                            width: "40vw" 
+                        <p style={{
+                            width: "40vw"
                         }}>
-                            Just like people, not all plastics are the same. 
+                            Just like people, not all plastics are the same.
                             Depending on where you live, certain plastics are not recyclable.
                             Check out our handy guide to learn more about the different types of plastics!
                         </p>
