@@ -49,8 +49,8 @@ export default class Web extends Component {
             <div className="bg" style={{
                 backgroundImage: `url(${require("../imgs/recycle-homepage1.png")})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "800px",
-                backgroundPosition: "-15vw -30vh"
+                backgroundSize: "500px",
+                backgroundPosition: "-10vw -20vh"
             }}>
                 <div className="bg">
                     <p style={{
@@ -63,10 +63,10 @@ export default class Web extends Component {
                         <a href="#welcome" className="mr-4">Home</a>
                         <a href="#our-goal" className="mr-4">Goal</a>
                         <a href="#how-were-gonna-do-it" className="mr-4">Process</a>
-                        <a href="#process" className="mr-4">Get Started</a>
+                        <a href="#process" className="mr-4">Start Sortin'</a>
                     </div>
                     <div id="welcome" className="d-flex flex-row" style={{
-                        marginTop: "310px",
+                        marginTop: "210px",
                         marginLeft: "15vw"
                     }} >
                         <div style={{
