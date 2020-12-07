@@ -1,4 +1,4 @@
-# Testing Protocol for Crusty Crab Crewmates' Sorta
+# Testing Protocol for Crusty Crab Crewmates' Sort
 
 Purpose: The aim of this document is guide us through testing the compatibility of Our MVP with Current version of Chrome Desktop and Mobile interfaces.
 
