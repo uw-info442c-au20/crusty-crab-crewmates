@@ -116,7 +116,7 @@ export default class Web extends Component {
                                 width: "auto",
                                 height: "auto",
                                 marginTop: "25vh"
-                            }} alt="pvc tube" src={require("../imgs/pvc-tube.png")} />
+                            }} alt="pvc tube" src={require("../imgs/recycle-img-3.png")} />
                         </div>
                     </div>
                 </div>
