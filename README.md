@@ -29,3 +29,4 @@ Build Instructions:
 - Cheryl Wu
 - Jojo Saunders
 - Alejandro Huante
+- Aaron Zhao
