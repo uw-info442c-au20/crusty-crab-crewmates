@@ -31,7 +31,9 @@ export default function Details() {
 
     return (
         <div id="bg-top" className="bg">
-            <div id="recycle-img" className="bg">
+            <div id="recycle-img" className="bg" style={{
+                backgroundImage: `url(${require("../imgs/recycle-img-" + id + ".png")})`,
+            }}>
                 <h1 className="ml-3" style={{
                     color: "#F7F7F7",
                     fontSize: "70px"

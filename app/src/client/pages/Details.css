@@ -5,9 +5,9 @@
 }
 
 #recycle-img {
-    background-image: url("../imgs/recycle-img-3.png");
     background-repeat: no-repeat;
     background-position: 15% 10%;
+    background-size: 220px
 }
 
 @media only screen and (max-width: 520px) {
