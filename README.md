@@ -27,5 +27,5 @@ Build Instructions:
 
 - Kevin, the GOAT, Weng
 - Cheryl Wu
-- jojo Saunders
+- Jojo Saunders
 - Alejandro Huante
