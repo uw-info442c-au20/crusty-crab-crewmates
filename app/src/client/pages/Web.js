@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import "./Home.css";
 import PlasticCardWeb from "../components/PlasticCardWeb";
 import * as d3 from 'd3';
+import DetailsModal from "../components/DetailsModal";
 
 export default class Web extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            recycleNumber: 1,
-            data: ""
+            recycleNumber: "",
+            data: "",
+            showModal: false,
         }
     }
 
@@ -20,8 +22,14 @@ export default class Web extends Component {
     }
 
     changeRecycleNumber = (recycleNumber) => {
-        console.log("called")
-        this.setState({ recycleNumber })
+        this.setState({ 
+            recycleNumber,
+            showModal: true 
+        }, () => console.log(this.state));
+    }
+
+    closeModal = () => {
+        this.setState({ showModal: false });
     }
 
     render() {
@@ -131,6 +139,8 @@ export default class Web extends Component {
                             {cards}
                         </div>
                     </div>
+                    {datum ? (<DetailsModal onClose={() => this.closeModal()} show={this.state.showModal} datum={datum} 
+                        number={this.state.recycleNumber} />) : ""}
                     {/* <div style={{
                         width: "100vw",
                         backgroundImage: `url(${require("../imgs/recycle-homepage2.png")})`,
