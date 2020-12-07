@@ -44,13 +44,20 @@ export default class Web extends Component {
                 backgroundSize: "800px",
                 backgroundPosition: "-15vw -30vh"
             }}>
-                <div className="bg" style={{
-                    // backgroundImage: `url(${require("../imgs/recycle-homepage1.png")})`
-                }}>
+                <div className="bg">
                     <p style={{
                         visibility: "hidden"
                     }}>filler cuz this stupid background keeps moving</p>
-                    <div className="welcome d-flex flex-row" style={{
+                    <div id="menu" className="d-flex flex-row" style={{
+                        marginLeft: "60vw",
+                        width: "50vw"
+                    }}>
+                        <a href="#welcome" className="mr-4">Home</a>
+                        <a href="#our-goal" className="mr-4">Goal</a>
+                        <a href="#how-were-gonna-do-it" className="mr-4">Process</a>
+                        <a href="#process" className="mr-4">Get Started</a>
+                    </div>
+                    <div id="welcome" className="d-flex flex-row" style={{
                         marginTop: "310px",
                         marginLeft: "15vw"
                     }} >
@@ -72,11 +79,45 @@ export default class Web extends Component {
                             height: "auto"
                         }} alt="fun-recycling" src={`${require("../imgs/recyclePpl.png")}`} />
                     </div>
-                    <div id="our-goal">
-                        <img src={require("../imgs/our-goal.svg")} />   
-                    </div>
-                    <div className="explanation" style={{ 
+                    <div id="our-goal" className="d-flex flex-row" style={{
                         marginLeft: "15vw"
+                    }}>
+                        <img alt="person speaking green background" src={require("../imgs/our-goal.svg")} />   
+                        <div id="our-goal-text" className="text-center" style={{
+                            maxWidth: "600px",
+                            width: "auto",
+                            height: "auto",
+
+                            marginTop: "8vh"
+                        }}>
+                            <h1 style={{ color: "#1F7269" }}>Our Goal</h1>
+                            <p>Our goal is to help reduce recycling error among younger individuals 
+                                in the us, cause no one really knows
+                                 how to recyce ya feel thgere should be more</p>
+                        </div>
+                    </div>
+                    <div className="d-flex flex-row mt-5" id="how-were-gonna-do-it" style={{
+                        marginLeft: "12vw"
+                    }}>
+                        <img alt="recycle bin blue" src={require("../imgs/how-were-gonna-do-it.svg")}/>
+                        <div className="text-center" id="how-text" style={{
+                            maxWidth: "40vw",
+                            width: "auto",
+                            height: "auto",
+
+                            marginTop: "8vh"
+                        }}>
+                            <h1 style={{ color: "#1F7269" }}>How we’re gonna do it</h1>
+                            <p>Our goal is to help reduce recycling error among younger 
+                                individuals in the U.S, cause no one really knows how to
+                                 recyce ya feel thgere should be moreOur goal is to hel
+                                 p reduce recycling error among younger individuals in the us, c
+                                 ause no one really knows how to recyce ya feel thgere should be more</p>
+                        </div>
+                    </div>
+                    <div id="process" className="mb-5" style={{ 
+                        marginLeft: "15vw",
+                        marginTop: "8vh"
                     }}>
                         <h1 style={{ color: "#1F7269" }}>Wait, Plastics have codes?</h1>
                         <p style={{
@@ -90,7 +131,7 @@ export default class Web extends Component {
                             {cards}
                         </div>
                     </div>
-                    <div style={{
+                    {/* <div style={{
                         width: "100vw",
                         backgroundImage: `url(${require("../imgs/recycle-homepage2.png")})`,
                         backgroundRepeat: "no-repeat",
@@ -120,7 +161,7 @@ export default class Web extends Component {
                                 marginTop: "25vh"
                             }} alt="pvc tube" src={require("../imgs/recycle-img-3.png")} />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )

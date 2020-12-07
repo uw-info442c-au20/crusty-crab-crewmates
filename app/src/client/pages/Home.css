@@ -59,3 +59,13 @@ html, body, #root, .App, .bg, .card-deck {
 #web h1 {
     font-size: 50px;
 }
+
+#web a {
+    font-size: 3vh;
+    color: #06413D;
+}
+
+#web a:hover {
+    color: #18796A;
+    cursor: pointer;
+}
