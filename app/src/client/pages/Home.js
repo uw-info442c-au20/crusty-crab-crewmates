@@ -17,7 +17,7 @@ export default class Home extends Component {
                 {/* Mobile version */}
                 <div id="mobile" className="bg">
                     <div id="bg-bottom" className="bg">
-                        <h1 className="text-center">Sort</h1>
+                        <h1 className="text-center text-white">Sort</h1>
                         <div style={{
                             position: "relative",
                             zIndex: "1",

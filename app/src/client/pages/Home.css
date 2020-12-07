@@ -12,6 +12,7 @@ html, body, #root, .App, .bg, .card-deck {
     background-repeat: no-repeat;
 }
 
+/* breakpoints for displaying web and mobile */
 @media only screen and (min-width: 600px) {
     #mobile {
         display: none;
@@ -24,7 +25,18 @@ html, body, #root, .App, .bg, .card-deck {
     }
 }
 
-@media only screen and (max-width: 450px) {
+/* breakpoints for background styling */
+@media only screen and (max-height: 600px) {
+    #mobile {
+        background-position: -110vw -100vh;
+    }
+
+    #bg-bottom {
+        background-position: -100vw -10vh;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-height: 601px) {
     #mobile {
         background-position: -100vw -60vh;
     }
@@ -34,7 +46,7 @@ html, body, #root, .App, .bg, .card-deck {
     }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (min-width: 450px) and (max-width: 599px) {
     #mobile {
         background-position: -50vw -60vh;
     }
