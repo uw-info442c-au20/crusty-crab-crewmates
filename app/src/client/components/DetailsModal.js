@@ -26,7 +26,7 @@ export default class DetailsModal extends Component {
 
         return (
             <div className={showHideClassName}>
-                <section className="modal-main">
+                <section className="modal-main mb-5">
                     <p onClick={this.props.onClose} style={{
                         position: "fixed",
                         left: "5%",
@@ -36,11 +36,10 @@ export default class DetailsModal extends Component {
                     }}>X</p>
                     <div id="details-container" style={{
                         marginLeft: "15vw",
-                        marginTop: "10vh",
-                        height: "100vh",
-                    }} className="details d-flex flex-row">
+                        marginTop: "-25vh",
+                    }} className="details d-flex flex-row flex-wrap">
                         <div style={{
-                            marginTop: "30vh"
+                            marginTop: "30vh",
                         }}>
                             <h2 style={{
                                 color: "#18796A"
@@ -56,6 +55,8 @@ export default class DetailsModal extends Component {
                             height: "auto",
                             marginTop: "25vh"
                         }} alt="pvc tube" src={require(`../imgs/recycle-img-${number}.png`)} />
+                        <iframe title="recycling video" width="500" height="315" src={"https://www.youtube.com/embed/jJlqyTb-oy0?start=" + datum.YoutubeStart} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p className="ml-3" style={{ width: "20vw" }}>{`${datum.PlasticAbv} is typically used in ${datum.FoundIn}`}</p>
                     </div>
                 </section>
             </div>

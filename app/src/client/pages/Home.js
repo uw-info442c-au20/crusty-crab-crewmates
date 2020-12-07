@@ -30,11 +30,7 @@ export default class Home extends Component {
                             <p style={{
                                 color: "#3C9471",
                                 fontSize: "27px"
-                            }} className="text-left ml-3">Select a plastic to learn more</p>
-                            <p style={{
-                                color: "#1F7269",
-                                fontSize: "20px"
-                            }} className="text-left ml-3">Want to know how to recycle something? Click on the plastic code of the thing you’re recycling to understand what you can do with it!</p>
+                            }} className="text-left ml-3">Select a plastic grade to learn more</p>
                             <div style={{
                                 display: 'grid',
                                 justifyContent: "space-evenly",
