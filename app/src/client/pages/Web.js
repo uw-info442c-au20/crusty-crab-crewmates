@@ -25,7 +25,7 @@ export default class Web extends Component {
         this.setState({ 
             recycleNumber,
             showModal: true 
-        }, () => console.log(this.state));
+        });
     }
 
     closeModal = () => {
@@ -141,37 +141,6 @@ export default class Web extends Component {
                     </div>
                     {datum ? (<DetailsModal onClose={() => this.closeModal()} show={this.state.showModal} datum={datum} 
                         number={this.state.recycleNumber} />) : ""}
-                    {/* <div style={{
-                        width: "100vw",
-                        backgroundImage: `url(${require("../imgs/recycle-homepage2.png")})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "100vw",
-                        backgroundPosition: "0vw -20vh"
-                    }}>
-                        <div style={{
-                            marginLeft: "20vw",
-                            marginTop: "10vh",
-                            height: "100vh",
-                        }} className="details d-flex flex-row">
-                            <div style={{
-                                marginTop: "30vh"
-                            }}>
-                                <h2 style={{
-                                    color: "#18796A"
-                                }}>{datum.PlasticName + " (" + datum.PlasticAbv + ")"}</h2>
-                                <p style={{
-                                    width: "40vw"
-                                }}>{datum.HowToRecycle}</p>
-                            </div>
-                            <img style={{
-                                maxWidth: "20vw",
-                                maxHeight: "20vw",
-                                width: "auto",
-                                height: "auto",
-                                marginTop: "25vh"
-                            }} alt="pvc tube" src={require("../imgs/recycle-img-3.png")} />
-                        </div>
-                    </div> */}
                 </div>
             </div>
         )

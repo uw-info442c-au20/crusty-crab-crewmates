@@ -64,7 +64,8 @@ html, body, #root, .App, .bg, .card-deck {
 }
 
 #web h1 {
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 #web a {
